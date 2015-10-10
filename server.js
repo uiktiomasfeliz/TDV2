@@ -19,12 +19,10 @@ var app = express();
 var passport = passport();
 
 // Usar la instancia de la aplicación Express para que escuche en el puerto '3000'
-app.listen(3000);
+app.listen(8080);
 
 // Hacer Log del status del server a la consola
 console.log('Servidor ejecutándose en http://localhost:3000/');
 
 // Usar la prpiedad module.exports para exponer nuestra nuestra instancia de la aplicación Express para uso externo
 module.exports = app;
-
-
