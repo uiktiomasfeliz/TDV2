@@ -1,0 +1,274 @@
+<div class="navbar-wrapper" ng-controller="main" translate-cloak elem-ready>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">{{'TITLE' | translate}}</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top">{{'URL_HOME' | translate}}</a></li>
+                        <li><a class="page-scroll" href="#features">{{'URL_WORK' | translate}}</a></li>
+                        <li><a class="page-scroll" href="#galery">{{'URL_TESTIMON' | translate}}</a></li>
+                        <li><a class="page-scroll" href="#contact">{{'URL_CONTACT' | translate}}</a></li>
+                        <li><a class="custom-cursor" ng-click="setLang('es_ES');"><img ng-class="getLang() == 'es_ES' ? 'lang-active' : '' " src="img/flag/ES.png"></a> </li>
+                        <li><a class="custom-cursor" ng-click="setLang('en_EN');"><img ng-class="getLang() == 'en_EN' ? 'lang-active' : '' " src="img/flag/US.png"></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1><br/><br/>{{'TXT1_CAROUCEL' | translate}}<br/></h1>
+                    <p>{{'TXT2_CAROUCEL' | translate}}</p>
+                    <p>
+                        <!--<a class="btn btn-lg btn-primary" href="#" role="button">READ MORE</a>
+                        <a class="caption-link" href="#" role="button">Inspinia Theme</a>-->
+                    </p>
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!--<img src="img/laptop.png" alt="laptop"/>-->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                  <h1><br/><br/>{{'TXT1_CAROUCEL' | translate}}<br/></h1>
+                  <p>{{'TXT2_CAROUCEL' | translate}}</p>
+                    <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>-->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- seccion menu descripcion -->
+<section id="features" class="container services">
+	<div class="row">
+        <div class="col-sm-3">
+            <h2>{{'FEATURES_HEAD1' | translate}}</h2>
+            <br/><p>{{'FEATURES_DESC1' | translate}}</p>
+            <p><a class="navy-link page-scroll" href="#imp" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h2>{{'FEATURES_HEAD2' | translate}}</h2>
+            <p>{{'FEATURES_DESC2' | translate}}</p>
+            <p><a class="navy-link page-scroll" href="#const" role="button">Details &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h2>{{'FEATURES_HEAD3' | translate}}</h2>
+            <p>{{'FEATURES_DESC3' | translate}}</p>
+            <p><a class="navy-link page-scroll" href="#mant" role="button">Details &raquo;</a></p>
+        </div>
+		 <div class="col-sm-3">
+            <h2>{{'FEATURES_HEAD4' | translate}}</h2>
+            <br/><p>{{'FEATURES_DESC4' | translate}}</p>
+            <p><a class="navy-link page-scroll" href="#trans" role="button">Details &raquo;</a></p>
+        </div>
+    </div>
+</section>
+<!-- seccion detalle trabajos -->
+<section  class="container features">
+	<!-- Impermeabilizaciones -->
+    <div class="row">
+        <div id="imp" class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>{{'IMP_HEAD1_DETAIL1' | translate}}<br/> <span class="navy">{{'IMP_HEAD1_DETAIL2' | translate}}</span> </h1>
+            <p>{{'IMP_DESC1_DETAIL' | translate}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <i class="fa fa-gears features-icon"></i>
+                <h2>{{'IMP_HEAD2_DETAIL' | translate}}</h2>
+                <p>{{'IMP_DESC2_DETAIL' | translate}}</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-wrench features-icon"></i>
+                <h2>{{'IMP_HEAD3_DETAIL' | translate}}</h2>
+                <p>{{'IMP_DESC3_DETAIL' | translate}}</p>
+            </div>
+        </div>
+        <div class="col-md-6 text-center  wow zoomIn">
+            <img src="img/imper.jpg" alt="dashboard" class="img-responsive">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <i class="fa fa-thumbs-up features-icon"></i>
+                <h2>{{'IMP_HEAD4_DETAIL' | translate}}</h2>
+                <p>{{'IMP_DESC4_DETAIL' | translate}}</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-umbrella features-icon"></i>
+                <h2>{{'IMP_HEAD5_DETAIL' | translate}}</h2>
+                <p>{{'IMP_DESC5_DETAIL' | translate}}</p>
+            </div>
+        </div>
+    </div>
+	<!-- Construciones y Reformas -->
+	<div class="row">
+        <div id="const" class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>{{'CR_HEAD1_DETAIL' | translate}}</h1>
+            <p>{{'CR_DESC1_DETAIL' | translate}}</p>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-6 features-text wow fadeInLeft">
+            <small>{{'COMPANY_NAME' | translate}}</small>
+            <h2>{{'CR_HEAD2_DETAIL' | translate}}</h2>
+            <p>{{'CR_DESC2_DETAIL' | translate}}</p>
+            <!--<a href="" class="btn btn-primary">Learn more</a>-->
+        </div>
+        <div class="col-lg-6 text-right wow fadeInRight">
+            <img src="img/reform2.jpg" alt="dashboard" class="img-responsive pull-right">
+        </div>
+    </div>
+	<!-- Mantenimiento de Comunidades -->
+	<div class="row">
+        <div id="mant" class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>{{'MC_HEAD1_DETAIL' | translate}}<br/> <span class="navy"> </span> </h1>
+            <p>{{'MC_DESC1_DETAIL1' | translate}}<small>{{'COMPANY_NAME' | translate}}</small>{{'MC_DESC1_DETAIL2' | translate}}<br/>{{'MC_DESC1_DETAIL3' | translate}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <i class="fa fa-refresh features-icon"></i>
+                <h2>{{'MC_HEAD2_DETAIL' | translate}}</h2>
+                <p>{{'MC_DESC2_DETAIL' | translate}}</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-cubes features-icon"></i>
+                <h2>{{'MC_HEAD3_DETAIL' | translate}}</h2>
+                <p>{{'MC_DESC3_DETAIL' | translate}}</p>
+            </div>
+        </div>
+        <div class="col-md-6 text-center  wow zoomIn">
+            <img src="img/mant.jpg" alt="dashboard" class="img-responsive">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <i class="fa fa-star features-icon"></i>
+                <h2>{{'MC_HEAD4_DETAIL' | translate}}</h2>
+                <p>{{'MC_DESC4_DETAIL' | translate}}</p>
+            </div>
+            <div class="m-t-lg">
+                <i class="fa fa-line-chart features-icon"></i>
+                <h2>{{'MC_HEAD5_DETAIL' | translate}}</h2>
+                <p>{{'MC_DESC5_DETAIL' | translate}}</p>
+            </div>
+        </div>
+    </div>
+	<!-- mudanzas -->
+	<div class="row">
+        <div id="trans" class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>{{'TM_HEAD1_DETAIL' | translate}}</h1>
+            <p></p>
+        </div>
+    </div>
+    <div class="row features-block">
+        <div class="col-lg-6 features-text wow fadeInLeft">
+            <small>{{'COMPANY_NAME' | translate}}</small>
+            <h2>{{'TM_HEAD2_DETAIL' | translate}}</h2>
+            <p>{{'TM_DESC2_DETAIL' | translate}}</p>
+            <!--<a href="" class="btn btn-primary">Learn more</a>-->
+        </div>
+        <div class="col-lg-6 text-right wow fadeInRight">
+            <img src="img/mudanza1.jpg" alt="dashboard" class="img-responsive pull-right">
+        </div>
+    </div>
+</section>
+<!-- testimonios -->
+<section id="galery" class="navy-section testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn">
+				<div class="carousel slide" id="carousel1">
+					<div class="carousel-inner">
+						<div class="item active">
+							<img alt="image" class="img-responsive" src="img/p_big3.jpg">
+						</div>
+						<div class="item">
+							<img alt="image"  class="img-responsive" src="img/p_big1.jpg">
+						</div>
+						<div class="item ">
+							<img alt="image" class="img-responsive" src="img/p_big2.jpg">
+						</div>
+					</div>
+					<a data-slide="prev" href="#carousel1" class="left carousel-control">
+						<span class="icon-prev"></span>
+					</a>
+					<a data-slide="next" href="#carousel1" class="right carousel-control">
+						<span class="icon-next"></span>
+					</a>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contacta -->
+<section id="contact" class="gray-section contact">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>{{'CNT_HEAD1_DETAIL' | translate}}</h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">{{'COMPANY_NAME' | translate}}</span></strong><br/>
+                    {{'CNT_ADDR1_DETAIL' | translate}}<br/>
+                    {{'CNT_ADDR2_DETAIL' | translate}}<br/>
+                    <abbr title="Teléfono">T:</abbr> {{'CNT_TLF_DETAIL' | translate}}
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                  {{'CNT_TXT1_DETAIL' | translate}}<small><span class="navy">{{'COMPANY_NAME' | translate}}</span></small>{{'CNT_TXT2_DETAIL' | translate}}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:test@email.com" class="btn btn-primary">{{'CNT_MAIL_DETAIL' | translate}}</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2015 {{'COMPANY_NAME' | translate}}</strong><br/>{{'CNT_RIGHT_DETAIL' | translate}}</p>
+            </div>
+        </div>
+    </div>
+</section>

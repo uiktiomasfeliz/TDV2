@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div id="wrapper">
+  <section ng-view></section>
+  <% if(typeof messages != 'undefined'){ for(var i in messages) { %>
+    <div class="alert alert-danger m-t flash">
+      <%= messages[i] %>
+    </div>
+  <% } } %>
+</div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
+
+
+  	<script type="text/javascript" src="/users/users.client.module.js"></script>
+    <script type="text/javascript" src="/users/services/authentication.client.service.js"></script>
+    <script type="text/javascript" src="/admin/admin.client.module.js"></script>
+    <script type="text/javascript" src="/admin/controllers/admin.client.controller.js"></script>
+    <script type="text/javascript" src="/admin/config/admin.client.routes.js"></script>
+    <script type="text/javascript" src="/application_admin.js"></script>
+
+</body>
+</html>
